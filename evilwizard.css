@@ -1,0 +1,502 @@
+body {
+  background-image: url('https://i.pinimg.com/736x/12/89/a6/1289a6ca96a1387206a581132518a27c.jpg');
+  background-size: 150px 150px;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('https://media1.tenor.com/m/xqvBeoKIZFEAAAAC/glitter-purple.gif');
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+h1, h2, p, li {
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  animation: blinker 1s linear infinite;
+  }
+
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+
+        }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 140px;
+}
+
+.banner {
+  width: 1;
+}
+
+.banner-image {
+  width: 700px;
+  height: 200px;
+}
+
+.banner-gif {
+  height: 200px;
+}
+
+.logo {
+  position: absolute;
+  z-index: 3;
+}
+
+.logo-image {
+  width: 700px;
+  filter: drop-shadow(0 0 6px #4444dd)
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.tiny-wizard {
+  height: 50px;
+}
+
+.main {
+  display: flex;
+}
+
+.left-column {
+  margin-left: 20px;
+  width: 200px;
+}
+
+.left-wizard {
+  height: 260px;
+}
+
+p.gandalf-quote {
+  margin-top: 5px;
+  font-size: 18px;
+  font-family: impact;
+  font-style: italic;
+  text-align: center;
+  background-image: url('https://i9.glitter-graphics.org/pub/2806/2806269upu027dmsy.gif');
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(5px 5px 2px rgb(255, 0, 98));
+}
+
+.lighting-divider {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.main-content {
+  margin-left: 20px;
+  margin-right: 20px;
+  flex: 1;
+}
+
+.main-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+
+.centerheader {
+  display: flex;
+  justify-content: center;
+}
+
+.wizard-emoji {
+  height: 50px;
+  width: 70px;
+}
+
+.rules {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rulep {
+  margin: 0 15px 0 15px;
+  color: transparent;
+  font-family: comic sans ms;
+  font-style: italic;
+  font-size: 30px;
+  text-align: center;
+  background-image: url('https://giffiles.alphacoders.com/319/31967.gif');
+  background-clip: text;
+  background-size: cover;
+  background-position: center;
+}
+
+.homosuck {
+  height: 200px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.homosuck::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(10, 10, 44);
+  border: none;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: blue;  
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: yellowgreen;
+}
+
+.link {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+
+a {
+  font-size: 23px;
+  font-family: comic sans ms;
+  color: yellowgreen;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+}
+
+.right-column {
+  margin-right: 20px;
+  width: 200px;
+}
+
+.college-sux {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Arial;
+}
+
+.sux {
+  font-size: 50px;
+  background-image: url('picture-assets/SUX.png');
+  background-size: cover;
+  color: transparent;
+}
+
+.why-college-bad {
+  font-family: arial;
+}
+
+.expensive {
+  background-image: url('picture-assets/expensive.gif');
+  background-size: cover;
+  background-position: center;
+  font-size: 22px;
+  color: transparent;
+}
+
+.use {
+  font-family: copperplate gothic light;
+  font-weight: bold;
+  font-size: 22px;
+  text-shadow: 0 0 3px rgb(114, 163, 255);
+  color:rgb(7, 0, 27);
+}
+
+.exclamation {
+  font-size: 20px;
+  background-image: url('picture-assets/exclamation.png');
+  background-size: 50px;
+  background-position: center;
+  color: transparent;
+}
+
+.better {
+  font-size: 22px;
+  background-image: url('picture-assets/better-new.png');
+  background-size: cover;
+  color: transparent;
+}
+
+.income {
+  font-family: 'courier new';
+  font-weight: bold;
+  font-size: 22px;
+  color: rgb(64, 0, 255);
+}
+
+.occupations {
+  list-style: none;
+  margin-top: 0;
+  font-family: copperplate gothic light;
+  font-weight: bold;
+  font-size: 18px;
+  color: red;
+}
+
+.dont {
+  font-family: arial;
+}
+
+.welders {
+  font-size: 22px;
+  background-image: url('picture-assets/welders.gif');
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+}
+
+.plumbers {
+  font-size: 22px;
+  background-image: url('picture-assets/plumbers.gif');
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+}
+
+.electrician {
+  font-size: 22px;
+  background-image: url('picture-assets/electrician.gif');
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+}
+
+.mechanic {
+  font-size: 22px;
+  background-image: url('picture-assets/mechanic.gif');
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+}
+
+.musician {
+  font-size: 22px;
+  background-image: url('picture-assets/musician.gif');
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+}
+
+.subway {
+  background-image: url('picture-assets/subway.gif');
+  background-size: cover;
+  background-position: center;
+  font-size: 22px;
+  color: transparent;
+}
+
+.operator {
+  background-image: url('picture-assets/operator.gif');
+  background-size: cover;
+  background-position: center;
+  font-size: 22px;
+  color: transparent;
+}
+
+.badass-wizard {
+  margin-top: 0;
+  margin-bottom: 0;
+  background-image: url('picture-assets/badass-wizard.gif');
+  background-size: cover;
+  background-position: center;
+  font-size: 35px;
+  color: transparent;
+}
+
+.left-column, .right-column {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: 4px solid;
+  border-image: url('https://dl.glitter-graphics.com/pub/3688/3688637oop3rkqk2p.gif');
+  border-image-slice: 20;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.stamps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5px;
+  row-gap: 5px;
+}
+
+.stamp {
+  height: 50px;
+  width: 94px;
+}
+
+.floater {
+  width: 1100px;
+  display: block;
+  position: sticky;
+  bottom: 5px;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.evil-wiz {
+  width: 1100px;
+  height: 150px;
+}
+
+.floater-chicken {
+  position: absolute;
+  top: 173px;
+  right: 35px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.chicken2 {
+  position: absolute;
+  top: 1300px;
+  right: 400px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.dragon-walk {
+  position: absolute;
+  top: 250px;
+  right: 1030px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.orb {
+  position: absolute;
+  top: 1330px;
+  right: 780px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.purple-friend {
+  position: absolute;
+  top: 360px;
+  right: 50px;
+  z-index: 4;
+  cursor: pointer;
+}
+
+.miku {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  height: 100px;
+  z-index: 5;
+}
+
+.six-seven {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.dragon-flames {
+  position: absolute;
+  top: 800px;
+  right: 1070px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.dragon-cool {
+  position: absolute;
+  top: 300px;
+  right: -220px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.wizard-side {
+  width: 200px;
+  position: absolute;
+  top: 1100px;
+  right: -120px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.cat {
+  width: 200px;
+  position: absolute;
+  top: 730px;
+  right: 500px;
+  rotate: -300deg;
+  transform: rotateY(180deg);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.blinkies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.foxy-vid {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 1500px;
+  right: -300px;
+  z-index: 4;
+  filter: url(#greenscreen);
+}
+
+.foxydiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  z-index: 3;
+}
+
+.flames-div {
+  display: none;
+  position: absolute;
+  top: 1044px;
+  
+  z-index: 4;
+  cursor: pointer;
+}
+.flames {
+  width: 100vw;
+  height: 50vw;
+}

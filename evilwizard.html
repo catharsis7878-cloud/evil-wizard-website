@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Evil Wizard</title>
+    <link rel="shortcut icon" type="image/x-icon" href="roxyfav.ico">
+    <link rel="stylesheet" href="evilwizard.css">
+  </head>
+  <body>
+    <div class="foxydiv">
+      <video id="foxy" class="foxy-vid">
+        <source src="audio-assets/foxy-jumpscare.mp4" type="video/mp4">
+      </video>
+      <img id="close" class="miku" onclick="unjumpscare()" src="https://gifcity.carrd.co/assets/images/gallery05/8f2817c2.png?v=20a350bf">
+      <svg style="display:none">
+        <filter id="greenscreen">
+          <feColorMatrix type="matrix"
+            values="1 0 0 0 0 
+                    0 0 1 0 0 
+                    0 0 1 0 0 
+                    1 0 1 -1 1 " />
+        </filter>
+      </svg>
+    </div>
+    <div class="container">
+      <div id="flames-div"class="flames-div">
+            <img id="flames" class="flames" src="https://d2w9rnfcy7mm78.cloudfront.net/9987911/original_026fc0b61e323aff95685b0331d518da.gif?1608653922?bc=0">
+      </div>
+      <div class="header">
+        <div class="banner-gif-div-left">
+          <img class="banner-gif" src="https://tinyurl.com/v29rcytn">
+        </div>
+        <div class="banner">
+          <img class="banner-image" src="https://i5.glitter-graphics.org/pub/477/477715ezv3si3kcd.gif">
+        </div>
+        <div class="banner-gif-div-right">
+          <img class="banner-gif" src="https://dl.glitter-graphics.com/pub/1488/1488178rl9xquohzt.gif">
+        </div>
+      </div>
+      <div class="logo">
+        <img class="logo-image" src="picture-assets/evilwizard.png">
+      </div>
+      <div class="divider">
+        <img class="tiny-wizard" src="https://tinyurl.com/2pyuepjk">
+        <img src="https://pixelsafari.neocities.org/dividers/sixpointedstars.gif">
+        <img src="https://pixelsafari.neocities.org/dividers/sixpointedstars.gif">
+        <img class="tiny-wizard" src="https://64.media.tumblr.com/65ab551086e3ab4f284628c112a034ec/89aa1c65f70b9ed6-a8/s75x75_c1/417472d634ce47091c8a19115fd3c43edf8c0150.gifv">
+      </div>
+      <div class="main">
+        <div class="floaters">
+          <div class="floater-chicken">
+            <img onclick="playPausedAudio()" src="https://web.archive.org/web/20150610235653im_/http://images.lingscars.com/images/header/webcams/chicken-ani.gif">
+            <audio id="chicken-scream">
+              <source src="audio-assets/chicken-on-tree-screaming.mp3" type="audio/mp3">
+              your browser is lame...
+            </audio>
+          </div>
+          <div class="chicken2">
+            <img onclick="playPausedAudio()" src="https://web.archive.org/web/20160618041040im_/http://images.lingscars.com/images/dads/chicken.gif">
+            <audio id="chicken-scream">
+              <source src="audio-assets/chicken-on-tree-screaming.mp3" type="audio/mp3">
+              your browser is lame...
+            </audio>
+          </div>
+          <div class="dragon-walk">
+            <img onclick="fire()" src="https://nimravidae.neocities.org/images/tgifs/small/dragon_3.gif">
+            <audio id="fire-noise">
+              <source src="audio-assets/fireball.mp3" type="audio/mp3">
+              your browser is lame...
+            </audio>
+          </div>
+          <div class="orb">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+              <img src="https://nimravidae.neocities.org/images/tgifs/small/crystal_ball.gif">
+            </a>
+          </div>
+          <!--foxy jumpscare thingy-->
+          <div class="purple-friend">
+            <img id="friend" class="purple-friend-image" onclick="jumpscare()" src="https://gifcity.carrd.co/assets/images/gallery07/858e4ac2.gif?v=20a350bf">
+          </div>
+          <div class="six-seven">
+            <img onclick="playPausedAudio2()" src="https://gifcity.carrd.co/assets/images/gallery11/b758a447.gif?v=20a350bf">
+            <audio id="six-seven">
+              <source src="audio-assets/six-seven-sound.ogg" type="audio/ogg">
+              your browser is lame...
+            </audio>
+          </div>
+          <div class="dragon-flames">
+            <a href="https://www.youtube.com/watch?v=DZyYapMZSec&list=RDDZyYapMZSec&start_radio=1">
+              <img src="https://blob.gifcities.org/gifcities/5FMDWQ6JT7X2YOTCLKWY2BX6ZG4ZDTXS.gif">
+            </a>
+          </div>
+          <div class="dragon-cool">
+            <a href="https://www.youtube.com/watch?v=DZyYapMZSec&list=RDDZyYapMZSec&start_radio=1">
+              <img src="https://nimravidae.neocities.org/images/pngs/dragon.png">
+            </a>
+          </div>
+          <div class="wizard-side">
+            <a href="https://www.youtube.com/watch?v=DZyYapMZSec&list=RDDZyYapMZSec&start_radio=1">
+              <img style="width: 320px;" src="https://i.pinimg.com/originals/08/d1/2d/08d12dbccf8b26c3338a0b82cdab411d.gif">
+            </a>
+          </div>
+          <div class="cat">
+            <a href="https://www.youtube.com/watch?v=DZyYapMZSec&list=RDDZyYapMZSec&start_radio=1">
+              <img style="width: 320px;" src="https://web.archive.org/web/20160621154240im_/http://images.lingscars.com/images/cats/22.gif">
+            </a>
+          </div>
+        </div>
+        <div class="left-column">
+          <div class="epic-gandalf">
+            <img class="left-wizard" src="https://64.media.tumblr.com/7292cad8e30ef5307a722246e5404d62/62d98d9d64792664-00/s400x600/7f3dec0bbc5ab3b95cf5357e16611f4f23ef65c1.gifv">
+            <p class="gandalf-quote">"Keep your forked tongue behind your teeth"</p>
+          </div>
+          <img class="lighting-divider" src="https://64.media.tumblr.com/9406f5bd7123d7125eccc0d6b4f8d0b8/89aa1c65f70b9ed6-61/s640x960/9550e4e52b3c9bc419ab3dd3da05bc6461d96e4c.gifv">
+          <div class="blinkies">
+            <img class="blinkie" src="https://braigwen.neocities.org/blinkies/wizard%20shit.gif">
+            <img class="blinkie" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a86671af-4c32-481a-82f9-ffef10d457e1/dgwbu2f-60ff2870-46ce-4730-a3e7-3936f75c9a95.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9hODY2NzFhZi00YzMyLTQ4MWEtODJmOS1mZmVmMTBkNDU3ZTEvZGd3YnUyZi02MGZmMjg3MC00NmNlLTQ3MzAtYTNlNy0zOTM2Zjc1YzlhOTUuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.06KHY5MBkjklJ_yOPYpnoJ3dRRUMhyWbeXxIpF8Bmcc">
+            <img class="blinkie" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a86671af-4c32-481a-82f9-ffef10d457e1/dgwbu6o-11296c06-57d8-4cb1-aaae-5efc6dc0aed9.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9hODY2NzFhZi00YzMyLTQ4MWEtODJmOS1mZmVmMTBkNDU3ZTEvZGd3YnU2by0xMTI5NmMwNi01N2Q4LTRjYjEtYWFhZS01ZWZjNmRjMGFlZDkuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.kMntvhC1uAaq3ZYRWw7LQehOq6JWfzGdntC2FeNhHDU">
+            <img class="blinkie" src="https://braigwen.neocities.org/blinkies/i'm%20a%20wizard.gif">
+            <img class="blinkie" src="https://braigwen.neocities.org/blinkies/magic%20is%20upon.gif">
+            <img class="blinkie" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a86671af-4c32-481a-82f9-ffef10d457e1/dgwbubm-155e515c-5a25-46e2-8fc5-d90a0e3983e7.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9hODY2NzFhZi00YzMyLTQ4MWEtODJmOS1mZmVmMTBkNDU3ZTEvZGd3YnVibS0xNTVlNTE1Yy01YTI1LTQ2ZTItOGZjNS1kOTBhMGUzOTgzZTcuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.wXgY2d48jBsxann3iF1sUXFne-l2iCRoNlaQBZw0kNA">
+            <img class="blinkie" src="https://braigwen.neocities.org/blinkies/dark%20crystal.webp">
+            <img class="blinkie" src="https://braigwen.neocities.org/blinkies/car%20wizard.gif">
+            <img class="blinkie" src="https://braigwen.neocities.org/blinkies/literally%20evil%20red.webp">
+            <img class="blinkie" src="https://braigwen.neocities.org/blinkies/cartoon%20wizard.gif">
+            <img class="blinkie" src="https://64.media.tumblr.com/b1b48860c80b00d899550cfe803cd079/6b46c94d902ee133-45/s400x600/bc43b91117dfa7d2c15551665c5b5c4174aace57.gifv">
+            <img class="blinkie" src="https://64.media.tumblr.com/55ff376afb203a29a88d76454d4553c4/6b46c94d902ee133-51/s400x600/92e761f6982f08fee54c528c36f4f6f255d2b2ca.gifv">
+            <img class="blinkie" src="https://64.media.tumblr.com/388af73770b0d455b25e4ad1fcae11af/6b46c94d902ee133-5e/s400x600/8ce2de236163524cd5a7facc8e956890e884d50b.gifv">
+            <img class="blinkie" src="https://64.media.tumblr.com/2e3ff5f51ddb20e296faff5d67a439d7/bb1d783785d3d2b3-b9/s250x400/91e972bf0c64a28938f5c8a891cca42089d5d54e.gifv">
+            <img class="blinkie" src="https://64.media.tumblr.com/e27f2d6ffcd5e994372ce670f93478ae/a94c09b55ae752f9-f8/s250x400/88da7128289cf8efd37205df2d47d7ff28924ded.gifv">
+            <img class="blinkie" src="https://64.media.tumblr.com/3c51fb42293aab9ebee52eac17a5d085/a94c09b55ae752f9-d4/s250x400/0ab618388c022626c4de8677801b60dd4754cb01.gifv">
+            <img class="blinkie" src="https://64.media.tumblr.com/c67408a93c6dba950f6d9d0f8e54afcb/34d3e1def4843443-71/s250x400/54bf500d31b33004702fcaeb945acaa384088fb4.gifv">
+            <img class="blinkie" src="https://64.media.tumblr.com/c51294015f60d6b64bd6ceb80dcc84d8/34d3e1def4843443-1d/s250x400/c558c2a24193fd5ebf9b7b7ef37157a5ef8ef234.gifv">
+            <img class="blinkie" src="https://64.media.tumblr.com/d6fbe461755d032b6e1d0ea3bf93f32c/a279551f9b76d85f-9e/s250x400/19bb90de2734b9ef27d96ac5e0041903bf35ff7f.gifv">
+            <img class="blinkie" src="https://64.media.tumblr.com/086c658ff76789c17a81d4a6a1f0a691/17ea343dbb3a2e10-25/s250x400/cc0723e7aaed9fb81bd9ae6438eebaa2320f2c5f.gifv">
+            <img class="blinkie" src="https://64.media.tumblr.com/acdd3d64b3c1ae01df59b5b37bc1238b/2000d7d101a2d704-27/s250x400/839e8842b009047629ddab9f20f322308409c6c6.gifv">
+            <img class="blinkie" src="https://64.media.tumblr.com/3f983d6f25f9cec19f50389bf6591c90/f678435acc021afa-d8/s250x400/892729336c1386963bdcaafedddebe45be053bd3.gifv">
+            <img class="blinkie" src="https://i5.glitter-graphics.org/pub/37/37415evfhgpai7u.gif">
+            <img class="blinkie" src="https://graphic.neocities.org/magicstarsb1.gif">
+            <img class="blinkie" src="https://adriansblinkiecollection.neocities.org/v77.gif">
+            <img class="blinkie" src="https://adriansblinkiecollection.neocities.org/v68.gif">
+            <img class="blinkie" src="https://adriansblinkiecollection.neocities.org/w16.gif">
+            <img class="blinkie" src="https://blinki.es/blinkies/other/spellbound.gif">
+            <img class="blinkie" src="https://graphic.neocities.org/tumblr_static_1zgjj0yrza1wsww4k4cocso4g.gif">
+            <img class="blinkie" src="https://graphic.neocities.org/magic.gif">
+            <img class="blinkie" src="https://graphic.neocities.org/tumblr_p2gz8nfJ4M1wclo4ko3_250.gif">
+            <img class="blinkie" src="https://graphic.neocities.org/a3c5437a-8809-4e55-8d7c-8084af6f51ad.gif">
+            <img class="blinkie" src="https://graphic.neocities.org/miserylovesme_.gif">
+            <img class="blinkie" src="https://y2k.neocities.org/blinkiez/newbatch/tumblr_pash9iqtin1wba83ho1_250.gif">
+            <img class="blinkie" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a86671af-4c32-481a-82f9-ffef10d457e1/dgwbu99-eb888156-6173-483b-bd7c-9b09df2f7efd.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9hODY2NzFhZi00YzMyLTQ4MWEtODJmOS1mZmVmMTBkNDU3ZTEvZGd3YnU5OS1lYjg4ODE1Ni02MTczLTQ4M2ItYmQ3Yy05YjA5ZGYyZjdlZmQuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.SQ3wB6Mm__XOaij_1YtZcyihIWPEYKziBr5vfxpVLlk">
+            <img class="blinkie" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a86671af-4c32-481a-82f9-ffef10d457e1/dgwbtyi-dbbace41-0895-407e-ba8a-fbfcc38a3890.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9hODY2NzFhZi00YzMyLTQ4MWEtODJmOS1mZmVmMTBkNDU3ZTEvZGd3YnR5aS1kYmJhY2U0MS0wODk1LTQwN2UtYmE4YS1mYmZjYzM4YTM4OTAuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.P90ibas7yyG2qTnTIQNazjhtTbteIH5Slt-sZBmEeGc">
+            <img class="blinkie" src="">
+            <img class="blinkie" src="">
+            <img class="blinkie" src="">
+          </div>
+        </div>
+        <div class="main-content">
+          <div class="centerheader">
+            <div class="main-header">
+              <img class="wizard-emoji" src="https://64.media.tumblr.com/2332452500f7699aad8705e065022b28/a94c09b55ae752f9-84/s75x75_c1/46809180622e3869388e173ecf8fb68517b08018.gifv">
+              <h1>EVIL WIZARD RULES</h1>
+              <img class="wizard-emoji" src="https://64.media.tumblr.com/2332452500f7699aad8705e065022b28/a94c09b55ae752f9-84/s75x75_c1/46809180622e3869388e173ecf8fb68517b08018.gifv">
+            </div>
+          </div>
+          <div class="rules">
+            <div class="rule-text">
+              <p class="rulep">#1 Don't stay up past SEVEN!</p>
+            </div>
+            <div class="rule-image">
+              <img src="https://64.media.tumblr.com/1162f59b5b4f36a278a0df4d77061f66/a94c09b55ae752f9-3a/s100x200/872980a6246128fdfdd8cd0b4f0dd50627dca435.gifv">
+            </div>
+          </div>
+          <div class="rules">
+            <div class="rule-image">
+              <img src="https://64.media.tumblr.com/93b7c386953123431bc796aa96c04605/a94c09b55ae752f9-bc/s100x200/2bfa8e476e77c290bd83c4b8308c209b11430295.gifv">
+            </div>
+            <div class="rule-text">
+              <p class="rulep">#2 Always say PLEASE and THANK YOU &#x1f525;</p>
+            </div>
+          </div>
+          <div class="rules">
+            <div class="rule-text">
+              <p class="rulep">#3 Don't ever SWEAR</p>
+            </div>
+            <div class="rule-image">
+              <img style="height: 200px;" src="https://64.media.tumblr.com/2e1ebb698a8f0466106afe1bb070b00c/a94c09b55ae752f9-73/s250x400/8400ac420ff87097bc11a6876d73a550341532e5.gifv">
+            </div>
+          </div>
+          <div class="rules">
+            <div class="rule-image">
+              <img src="https://64.media.tumblr.com/47d7c8c5061ecbce5bba4a6157a99edf/a94c09b55ae752f9-67/s250x400/9fa6922e899bc7cdfe1b538fd70c0a11e77c8882.gifv">
+            </div>
+            <div class="rule-text">
+              <p class="rulep">#4 Never disobey MOM</p>
+            </div>
+          </div>
+          <div class="rules">
+            <div class="rule-text">
+              <p class="rulep">#5 Always clean up your MESSES</p>
+            </div>
+            <div class="rule-image">
+              <img src="https://64.media.tumblr.com/aa9760835797fc41ae68c2c94c3f423d/a94c09b55ae752f9-9e/s400x600/6582569229160858a39129510876ae47151b4dda.gifv">
+            </div>
+          </div>
+          <div class="homosuck">
+            <p class="rose">Frigglish bothered his beard, as if unkinking a hitch in a long silk windsock. A more pedestrian audience would parse the exhibit as nervous compulsion. Behavior to petition contempt among the reasonable. He was however not surrounded by the reasonable, but the wise, a distinction in men that would forever be the difference in history's garland of treasured follies. As a matter of fact, his cadre of fellow wizards were all putting similar moves on their beards as well. The practice would evince thoughtfulness - sagacity, even - if they didn't do it all the time. Standing in line at the bank. Shooing squirrels from bird feeders. Few occasions were safe.
+              <br><br>
+            Zazzerpan inspected the clue. A single piece of evidence cradled in his coriaceous old man palms. It was a human bone, not striking in the tale it told alone so much as that told by the thousands like it festooning the marshy soil of the mass grave. The grisly expanse bore the texture of a decadent dessert, like one of Smarny's formidable custard trifles wobbled out on wheels for the holidays, to the dismay of a small nation.
+              <br><br>
+            "You're certain of this?" asked Frigglish. Despite what he was doing with his beard, he was, in fact, immersed in meaningful contemplation.
+              <br><br>
+            "I am afraid I am becoming more so with each terrible tick groused by that gaudy timepiece slung around your neck." In case it wasn't clear, Frigglish wore a clock Zazzerpan didn't care for. It was magic. "The massacre of Syrs Gnelph was not as written."
+              <br><br>
+            "What has you convinced it was the hand of our disciples in this blackness?" Executus chimed in.
+              <br><br>
+            "I believe... I..." a fat face stammered, eyes darting with the guilt of a thief in the throes of an unraveling alibi. "I can summon a... more pressing line of inquiry..." No, Smarny. Nobody was in the mood for a sticky bundt loaf just now.
+              <br><br>
+            Zazzerpan's ears fell insubstantial to any line of inquiry, pastry-oriented or otherwise. His abstruse contour carved a pondering shape in the fog carpeting centuries-dead. His eleven contemporaries too embraced the muted consternation of their great Predicant Scholar. Few wizards kept sharper adumbratives or read them with such lucidity. When Zazzerpan treated men with silence it was seldom unrepaid by the wise and reasonable alike.
+              <br><br>
+            It was harrowing to entertain. Zazzerpan the Learned's storied Complacency of Wizards was marked for grander descendence. Disciples hand-picked, vetted by Ockite the Bonafide and tested by Gastrell the Munificent. The twelve sweetest, most studious children a pair of elderly eyes could give their sparkle. Not the ragged guttersnipe so oft-harvested by the common Obscenity, those vituperative little beggars with hearts to corrupt as dropped bananas brown. That these chosen youngsters would turn was not merely unthinkable, but something of a roundhouse to the temporal bones of the Upper Indifference's high chamber of Softskulled Prophets.
+              <br><br>
+            His wisdom-savaged brow pruned further with recount of his many lessons to wouldbe successors. Lessons to advance humanity's elucidation and prosperity, an outcome this bleak trail now painfully obviated. There were few puzzles The Learned could not suspend and dissect in the recondite manifold beneath his extremely expensive pointy hat. Daring to pitch his cherished pupils in with the foul melange of history's rogues, the heretofore abstract scourge that built up civilizations with ungodly magic and tore them down with joyful malice, would prove an intellectual trespass to make his calcium-deficient bones quake.
+              <br><br>
+            And more daring yet was the only question that now mattered. Could a bunch of bearded, scraggly old men in preposterous outfits hunt them down? He didn't have an answer. Only a simple observation so blunt and uncharacteristically jejune for the lauded sage it was breathtaking in its selfevidency.
+              <br><br>
+            "We're going to need more wands." (Wow. Think of something better.)</p>
+          </div>
+          <!--<img class="blasphemy" src="https://lallys.carrd.co/assets/images/gallery10/13a40655_original.gif?v=292bc4ff">
+          -->
+          <div class="link">
+            <a href="https://www.youtube.com/watch?v=wQGk28mM6j8&list=RDwQGk28mM6j8&start_radio=1">Click me</a>
+          </div>
+        </div>
+        <div class="right-column">
+          <div class="college-sux">
+            <img class="wizard-lighting" src="https://64.media.tumblr.com/29a51e471f1e16d5aea7a4d7ea68cba4/e463b1bef0d739df-d5/s250x400/e643ec2223950664829e5ee113a0fec6fb029a65.webp">
+            <h2>College <span class="sux">SUX</span></h2>
+            <ul class="why-college-bad">
+              <li>Too darn <span class="expensive">EXPENSIVE!</span></li>
+              <li>Classes you won't <span class="use">USE</span><span class="exclamation">!</span></li>
+              <li>Trade school's <span class="better">BETTER!</span></li>
+              <li>Delayed <span class="income">INCOME</span></li>
+            </ul>
+            <p class="dont">Don't need college to be a...</p>
+            <ul class="occupations">
+              <li class="welders">WELDERS</li>
+              <li class="plumbers">PLUMBERS</li>
+              <li class="electrician">ELECTRICIAN</li>
+              <li class="mechanic">MECHANIC</li>
+              <li class="musician">MUSICIAN</li>
+              <li><span class="subway">SUBWAY</span> <span class="operator">OPERATOR</span></li>
+            </ul>
+            <h1 class="badass-wizard">BADASS WIZARD</h1>
+          </div>
+          <div class="stamps">
+            <img class="stamp" src="https://64.media.tumblr.com/247db829e8cb7ed2f9919c957be9f8c7/50aafb6f019b2d66-5f/s100x200/c3074f20a7da3f8d30295410b07f3eb9786093ce.gifv">
+            <img class="stamp" src="https://64.media.tumblr.com/21a19ca4e6998ead9e604f7ffdcfecec/a94c09b55ae752f9-8b/s100x200/753a02e56bf741a1d86a0717e09cea1df9887906.pnj">
+            <img class="stamp" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7cf193a7-9a00-4041-ac40-4d3638c0dda8/d1ro2by-2867ded9-e905-4ea5-9008-aec3cd2432d0.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi83Y2YxOTNhNy05YTAwLTQwNDEtYWM0MC00ZDM2MzhjMGRkYTgvZDFybzJieS0yODY3ZGVkOS1lOTA1LTRlYTUtOTAwOC1hZWMzY2QyNDMyZDAuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.YBu2MQLlIZKAS0b9PNH8MxpACatqFA0aFr2lThm_cN8">
+            <img class="stamp" src="https://64.media.tumblr.com/64998d8f206faee2fa45cea8472266fe/2000d7d101a2d704-91/s100x200/40c55478e041c859ff888ae5773e43bf346cfde3.pnj">
+            <img class="stamp" src="https://64.media.tumblr.com/3b791adb948f9bf913f2378404b19ff4/32a5dd139dbe4c6b-83/s250x400/accb83d4ca8c376df5239b3e15cb0be7cb350905.pnj">
+            <img class="stamp" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a84c9e05-e20f-46a1-b4dc-5f1111e6a9df/d2p1wgl-030a8281-8135-421b-94f9-860f8e4f7022.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9hODRjOWUwNS1lMjBmLTQ2YTEtYjRkYy01ZjExMTFlNmE5ZGYvZDJwMXdnbC0wMzBhODI4MS04MTM1LTQyMWItOTRmOS04NjBmOGU0ZjcwMjIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.gTZ65kNj9xkkpbhzS-HmYuCQfVf5R5U5uYcNQRxu4gw">
+            <img class="stamp" src="https://64.media.tumblr.com/b425fa4ba13d294a308ecd4349f6d774/e77352fabc165b5b-ae/s100x200/f4c06627d0400b7a9bdeb51531791e5de93eb0ea.gifv">
+            <img class="stamp" src="https://64.media.tumblr.com/fe164cfc98a00fbbb6cdf8a5ee7335df/687e8fd4ed81580e-39/s100x200/541b4bf80757742d3aa021ea9b40e2aea1caf6e5.pnj">
+            <img class="stamp" src="https://64.media.tumblr.com/cc49ddce993a88c8fb2a4ab2b6ad900f/687e8fd4ed81580e-b8/s100x200/c33a8cee45106d37ea634d5c2fb77b834df93949.pnj">
+            <img class="stamp" src="https://64.media.tumblr.com/4d0dddabc214697330f30576da23bc4b/687e8fd4ed81580e-d8/s100x200/ffefc295f2aaafe218f89ce610dbc7faf2c0951d.pnj">
+            <img class="stamp" src="https://64.media.tumblr.com/c8f6bdae9dd744c67684a8a38fb29003/687e8fd4ed81580e-82/s100x200/fe2f06c3cd380416f8ca0ef1e55f8b9cda044849.gifv">
+            <img class="stamp" src="https://64.media.tumblr.com/07e4d30663af247b6b884f5d074aef30/687e8fd4ed81580e-80/s100x200/3bab543f652af9328c727538f10d3b1f9457d095.gifv">
+            <img class="stamp" src="https://64.media.tumblr.com/fc7b550e280522b8ef17da378792f6f1/687e8fd4ed81580e-69/s100x200/58605f7f8713a2bc906381b3e36988389f0b1464.pnj">
+            <img class="stamp" src="https://64.media.tumblr.com/c1f7a36c060e254243eea95b93310151/687e8fd4ed81580e-45/s100x200/3020286520f9f9904f7058efa32fee519ccd758d.pnj">
+            <img class="stamp" src="https://64.media.tumblr.com/37a5288b91f67edeef2877d6cfe4ca10/687e8fd4ed81580e-29/s100x200/cef97586806450c67fd7da60ede52f489fa1275c.pnj">
+            <img class="stamp" src="https://64.media.tumblr.com/8428186b7f925c2af3cd0a524ef8e48a/687e8fd4ed81580e-eb/s100x200/d3d7cae26358bb8ffcfc1dbd3acfd90a19aa2d5c.pnj">
+            <img class="stamp" src="https://64.media.tumblr.com/dfcb1676303d4e527d7dc5171c8b09af/687e8fd4ed81580e-08/s100x200/383ecd75de4e58e915af98fccf49de4c0d1a2f24.gifv">
+            <img class="stamp" src="https://64.media.tumblr.com/914536de8cbe7e13b52ff81ec91fb91f/687e8fd4ed81580e-aa/s100x200/a9d54541f92070160efac553808ba5b2af0e45ab.gifv">
+            <img class="stamp" src="https://64.media.tumblr.com/ab6a2658bc98466a5dbc5d0c7b0b46aa/687e8fd4ed81580e-64/s100x200/7065825d30bfba07049b4f46d32a1bd7b56b79b8.pnj">
+            <img class="stamp" src="https://64.media.tumblr.com/d2c389a9cd242a46ba7c39288a14016d/687e8fd4ed81580e-11/s100x200/c035c1dfe026a4515d9253090d22f24426ef0845.gifv">
+            <img class="stamp" src="https://64.media.tumblr.com/68b9a0b7ee1ddc6d51a875d6c781464d/43d92254cbdc3a3c-af/s250x400/89e245def4e67b15c39f7125d66d4054c0969ffe.pnj">
+            <img class="stamp" src="https://64.media.tumblr.com/6279fe225b9ccf98fb56baa88d8de68a/687e8fd4ed81580e-0c/s100x200/39f80b7ba90ef4a6d958bb8468bd959e42bf1ce2.pnj">
+            <img class="stamp" src="https://64.media.tumblr.com/e9d367c25255832b191eb17fe992500e/687e8fd4ed81580e-71/s100x200/2a88cf3c3158d9d32b70f3840aed20b573d7ac80.pnj">
+            <img class="stamp" src="https://64.media.tumblr.com/cdff56aaf896230a706bc3ce874ba92f/687e8fd4ed81580e-08/s100x200/4f16aa29cdbbbcf5480c447f238a1e27b6058351.pnj">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="floater">
+      <img class="evil-wiz"src="https://media1.tenor.com/m/wtDT-hD0X_cAAAAd/evil-wizard-uncle-grandpa.gif">
+    </div>
+    <script>
+         // <![CDATA[
+    var colour="random"; // in addition to "random" can be set to any valid colour eg "#f0f" or "red"
+    var sparkles=50;
+
+    /****************************
+    *  Tinkerbell Magic Sparkle *
+    *(c)2005-13 mf2fm web-design*
+    *  http://www.mf2fm.com/rv  *
+    * DON'T EDIT BELOW THIS BOX *
+    ****************************/
+    var x=ox=400;
+    var y=oy=300;
+    var swide=800;
+    var shigh=600;
+    var sleft=sdown=0;
+    var tiny=new Array();
+    var star=new Array();
+    var starv=new Array();
+    var starx=new Array();
+    var stary=new Array();
+    var tinyx=new Array();
+    var tinyy=new Array();
+    var tinyv=new Array();
+
+    window.onload=function() { if (document.getElementById) {
+      var i, rats, rlef, rdow;
+      for (var i=0; i<sparkles; i++) {
+        var rats=createDiv(3, 3);
+        rats.style.visibility="hidden";
+        rats.style.zIndex="999";
+        document.body.appendChild(tiny[i]=rats);
+        starv[i]=0;
+        tinyv[i]=0;
+        var rats=createDiv(5, 5);
+        rats.style.backgroundColor="transparent";
+        rats.style.visibility="hidden";
+        rats.style.zIndex="999";
+        var rlef=createDiv(1, 5);
+        var rdow=createDiv(5, 1);
+        rats.appendChild(rlef);
+        rats.appendChild(rdow);
+        rlef.style.top="2px";
+        rlef.style.left="0px";
+        rdow.style.top="0px";
+        rdow.style.left="2px";
+        document.body.appendChild(star[i]=rats);
+      }
+      set_width();
+      sparkle();
+    }}
+
+    function sparkle() {
+      var c;
+      if (Math.abs(x-ox)>1 || Math.abs(y-oy)>1) {
+        ox=x;
+        oy=y;
+        for (c=0; c<sparkles; c++) if (!starv[c]) {
+          star[c].style.left=(starx[c]=x)+"px";
+          star[c].style.top=(stary[c]=y+1)+"px";
+          star[c].style.clip="rect(0px, 5px, 5px, 0px)";
+          star[c].childNodes[0].style.backgroundColor=star[c].childNodes[1].style.backgroundColor=(colour=="random")?newColour():colour;
+          star[c].style.visibility="visible";
+          starv[c]=50;
+          break;
+        }
+      }
+      for (c=0; c<sparkles; c++) {
+        if (starv[c]) update_star(c);
+        if (tinyv[c]) update_tiny(c);
+      }
+      setTimeout("sparkle()", 40);
+    }
+
+    function update_star(i) {
+      if (--starv[i]==25) star[i].style.clip="rect(1px, 4px, 4px, 1px)";
+      if (starv[i]) {
+        stary[i]+=1+Math.random()*3;
+        starx[i]+=(i%5-2)/5;
+        if (stary[i]<shigh+sdown) {
+          star[i].style.top=stary[i]+"px";
+          star[i].style.left=starx[i]+"px";
+        }
+        else {
+          star[i].style.visibility="hidden";
+          starv[i]=0;
+          return;
+        }
+      }
+      else {
+        tinyv[i]=50;
+        tiny[i].style.top=(tinyy[i]=stary[i])+"px";
+        tiny[i].style.left=(tinyx[i]=starx[i])+"px";
+        tiny[i].style.width="2px";
+        tiny[i].style.height="2px";
+        tiny[i].style.backgroundColor=star[i].childNodes[0].style.backgroundColor;
+        star[i].style.visibility="hidden";
+        tiny[i].style.visibility="visible"
+      }
+    }
+
+    function update_tiny(i) {
+      if (--tinyv[i]==25) {
+        tiny[i].style.width="1px";
+        tiny[i].style.height="1px";
+      }
+      if (tinyv[i]) {
+        tinyy[i]+=1+Math.random()*3;
+        tinyx[i]+=(i%5-2)/5;
+        if (tinyy[i]<shigh+sdown) {
+          tiny[i].style.top=tinyy[i]+"px";
+          tiny[i].style.left=tinyx[i]+"px";
+        }
+        else {
+          tiny[i].style.visibility="hidden";
+          tinyv[i]=0;
+          return;
+        }
+      }
+      else tiny[i].style.visibility="hidden";
+    }
+
+    document.onmousemove=mouse;
+    function mouse(e) {
+      if (e) {
+        y=e.pageY;
+        x=e.pageX;
+      }
+      else {
+        set_scroll();
+        y=event.y+sdown;
+        x=event.x+sleft;
+      }
+    }
+
+    window.onscroll=set_scroll;
+    function set_scroll() {
+      if (typeof(self.pageYOffset)=='number') {
+        sdown=self.pageYOffset;
+        sleft=self.pageXOffset;
+      }
+      else if (document.body && (document.body.scrollTop || document.body.scrollLeft)) {
+        sdown=document.body.scrollTop;
+        sleft=document.body.scrollLeft;
+      }
+      else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
+        sleft=document.documentElement.scrollLeft;
+        sdown=document.documentElement.scrollTop;
+      }
+      else {
+        sdown=0;
+        sleft=0;
+      }
+    }
+
+    window.onresize=set_width;
+    function set_width() {
+      var sw_min=999999;
+      var sh_min=999999;
+      if (document.documentElement && document.documentElement.clientWidth) {
+        if (document.documentElement.clientWidth>0) sw_min=document.documentElement.clientWidth;
+        if (document.documentElement.clientHeight>0) sh_min=document.documentElement.clientHeight;
+      }
+      if (typeof(self.innerWidth)=='number' && self.innerWidth) {
+        if (self.innerWidth>0 && self.innerWidth<sw_min) sw_min=self.innerWidth;
+        if (self.innerHeight>0 && self.innerHeight<sh_min) sh_min=self.innerHeight;
+      }
+      if (document.body.clientWidth) {
+        if (document.body.clientWidth>0 && document.body.clientWidth<sw_min) sw_min=document.body.clientWidth;
+        if (document.body.clientHeight>0 && document.body.clientHeight<sh_min) sh_min=document.body.clientHeight;
+      }
+      if (sw_min==999999 || sh_min==999999) {
+        sw_min=800;
+        sh_min=600;
+      }
+      swide=sw_min;
+      shigh=sh_min;
+    }
+
+    function createDiv(height, width) {
+      var div=document.createElement("div");
+      div.style.position="absolute";
+      div.style.height=height+"px";
+      div.style.width=width+"px";
+      div.style.overflow="hidden";
+      return (div);
+    }
+
+    function newColour() {
+      var c=new Array();
+      c[0]=255;
+      c[1]=Math.floor(Math.random()*256);
+      c[2]=Math.floor(Math.random()*(256-c[1]/2));
+      c.sort(function(){return (0.5 - Math.random());});
+      return ("rgb("+c[0]+", "+c[1]+", "+c[2]+")");
+    }
+      var poop = document.getElementById("chicken-scream");
+
+      function playPausedAudio() {
+        if (poop.paused) {
+          poop.play();
+        } else {
+          poop.pause();
+          poop.currentTime = 0;
+        }
+      }
+
+      var pee = document.getElementById("six-seven");
+
+      function playPausedAudio2() {
+        if (pee.paused) {
+          pee.play();
+        } else {
+          pee.pause();
+          pee.currentTime = 0;
+        }
+      }
+
+      var video = document.getElementById("foxy");
+      var imgClose = document.getElementById("close");
+      var imgOpen = document.getElementById('friend');
+
+      function jumpscare() {
+        if (video.style.display = 'none') {
+          video.style.display = 'flex';
+          video.play();
+          imgClose.style.display = 'block';
+          imgOpen.style.display = 'none';
+        }
+      }
+
+      function unjumpscare() {
+          video.style.display = 'none';
+          imgClose.style.display = 'none';
+          imgOpen.style.display = 'block';
+      }
+      
+      var audio = document.getElementById("fire-noise");
+      var flames = document.getElementById("flames-div");
+
+      function fire() {
+        if (flames.style.display = 'none') {
+          flames.style.display = 'block';
+        }
+        if (audio.paused) {
+          audio.play();
+        } else {
+          audio.pause();
+          audio.currentTime = 0;
+        }
+      }
+
+      /*
+      if (video.paused) {
+          var video = getElementById("foxy");
+          video.style.display = "block";
+          video.play();
+        } else {
+          video.pause();
+          video.currentTime = 0;
+          video.style.display = "none";
+        }
+      */
+
+      
+      /* 
+                                                ###                                                
+                                                ###                                                 
+                                              #####                                                 
+                                           ########                                                 
+                                         #########                                                  
+                                     ############                                                   
+                                  ##############                                                    
+                                #################################                                   
+                             ##########################################                         #   
+                          ###################################################                ###    
+                      ##########################################################################    
+                    ##########################################################################      
+                  ##########################################################################        
+                ##########################################################################          
+              #############################################################################         
+            #################################################################################       
+           ####################################################################################     
+          ######################################################################################    
+        #########################################################################################   
+       ###########################################################################################  
+      ########-+++################################################################################# 
+      #########----..-+++################################################################+..+###### 
+     ###########----------++#########################################################+------########
+     ############+.-------++##########################################################-----#########
+    ###############------+++###########################################################----#########
+    ################+--++++############################################################+-+##########
+    ##################+#+###############################################################-###########
+    ################################################################################+###############
+    ###############################################################################-.+##############
+    ##########################################################--#################+...-##############
+    ######################################################+-...################-.....-##############
+    ################################################+--......+##############-........-##############
+     #######################################+---........--+############+--...........-##############
+     #######################------+++-..--.....---..-+###########+#--...---....-------##############
+     ######################.....-#####-.-++.  .+###+-..............-+#+..+#-   -################### 
+     #####################.....-######+..-#+.  .+####+............+####-..#+.  .+#################  
+      ###################-.....-#######+..+#-   .####+-..........-+#####...#+.  .+################  
+      ###################-......+#######-..#+.  .-####+...----...+######+..+#-   .################  
+      ###################-.......+#######..-#+.  .+####++-....-++########-..++.   -+############    
+      ###################-........-######+..+#-   .+#+-..........-+######+..-#+.  .-############    
+      ####################-.........+++++++..++.....-..............-+++++++-.-#-...+###########     
+       ####################...........------------.......................------..+###########       
+       #####################+.................+##++#+++++#+++#++#++++++##-......+###########        
+       #######################-................-#++-+--+#--+--++-++-+--.......-###########          
+       ##################+++####+................-##++-+#-++++#+#++#+......-#############           
+       ##################++########+.................--+########+-.......+#############             
+       ##################+###########+--............................-+###############               
+      ##################++##########+#####+++--.............----+#################                  
+      #################++#########+++++++######################################                     
+      #################++######+++++++++++++#####++++++####++++++++########                         
+      #################++####++++++++++++++###+++++++++++###+++++++#####                            
+      ################+++++############++####+++++++++++++#######+++                                
+     #################++++++++++++++#########++++++++++++++####+++++                                
+     #################++#####+++++++++++++++++++++++++++++++++++++++                                
+    ##################++++#############++++++++++++++++++++++####+++                                
+    ##################++++++++++++#############################+++++                                
+  ######## ##########+++++++++++++++++++++++++++++++++++++++++++++++                                
+  #####    ##########+++++++++++++++++++++++++++++++++++++++++++##++                                
+###        ##########+++++++++++++++++++++++++++++++++++++++++####+++                               
+          ###########++++++++++++++++++++++++++++++++++++++######++++                               
+          ###########++++++++++++++++++++++++++++++++++########++++++                               
+          ###########++++++++++++++++++++++++++++++########+++++###++                               
+          ##########+++++++++++++++++++++##############++++++######++                               
+         ########   +++###########################+++++++##########++                               
+        ######      +++##################+++++++++++##############+++                               
+       ####          ++++++++++++++++++++++++++##################++                                 
+      ##               +++++++++++++###########################++                                   
+                          ++++###########+++++++++++++#########+                                    
+                            ++##########++         +++++++++++++                                    
+                            ++++++++++++++         ###+++++++###                                    
+                            ###++++++++###         #############                                    
+                            ##############         #############                                    
+                            ##############        ##############                                    
+                            ##############      ##################                                  
+                          ##################   ######################                               
+                         #################################################                          
+                         ####################################################                       
+                         #####################################################                      
+                         #####################################################                      
+                          ###################################################                       
+                           ###########################
+      */                                 
+    </script>
+  </body>
+</html>
